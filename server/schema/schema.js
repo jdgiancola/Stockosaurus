@@ -1,6 +1,6 @@
 const graphql = require('graphql');
 
-const InventoryItem = require('../models/InventoryItem'); 
+const InventoryItem = require('../Models/InventoryItem'); 
 
 
 // Define your types and relationships here
