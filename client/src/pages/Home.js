@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Home.css';
+import '../../../server/Uploads/dino-figures.png';
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -16,9 +16,21 @@ const Home = () => {
     imageUrl: ''
   });
 
-  // Dummy data for the sake of example
+  // Dummy data
   const inventoryItems = [
-    // ... existing items
+      {
+        id: 1,
+        name: "Dinosaur Figures",
+        description: "Assorted dinosaur figurines",
+        quantity: 10,
+        price: 29.99,
+        category: "Toys",
+        supplier: "FunTimes",
+        purchaseDate: "2023-01-01",
+        expirationDate: "2025-12-31",
+        location: "Aisle 3",
+        imageUrl: ""  
+      },
   ];
 
   // Handlers for form input and submission
@@ -35,8 +47,6 @@ const Home = () => {
   };
 
   const handleImageChange = (e) => {
-    // Assuming the file will be handled here
-    // In a real app, you would also handle file uploads
     setFormData(prevState => ({
       ...prevState,
       imageUrl: e.target.files[0]
