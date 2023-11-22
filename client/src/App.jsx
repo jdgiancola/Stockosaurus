@@ -7,9 +7,16 @@ import SignupPage from './pages/Signup-Page';
 import DonatePage from './pages/Donate';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import './Styles';
+import './Styles/About.css';
+import './Styles/Donate.css';
+import './Styles/Home.css';
+import './Styles/LoginPage.css';
+import './Styles/Signup-Page.css';
+
 
 function App() {
+  console.log('Rendering App component');
+
   return (
     <Router>
       <div className="App">

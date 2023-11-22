@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
-import Auth from '../../utils/auth';
+import Auth from '../utils/auth';
 
 const Header = () => {
   const logout = (event) => {
@@ -22,13 +22,13 @@ const Header = () => {
         <Nav>
           {Auth.loggedIn() ? (
             <>
-            <Button as= {Link} to="/" variant="primary" className="m-2">
+              <Button as={Link} to="/" variant="primary" className="m-2">
                 Home
               </Button>
-              <Button as= {Link} to="/Donate" variant="primary" className="m-2">
+              <Button as={Link} to="/Donate" variant="primary" className="m-2">
                 Donate
               </Button>
-              <Button as= {Link} to="/About" variant="primary" className="m-2">
+              <Button as={Link} to="/About" variant="primary" className="m-2">
                 About us
               </Button>
               <Button variant="light" className="m-2" onClick={logout}>
