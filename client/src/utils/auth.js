@@ -1,13 +1,13 @@
 // Desc: Authentication service for managing user authentication using JSON Web Tokens (JWT).
 
 // Import the jwt-decode library for decoding JWT tokens
-import decode from 'jwt-decode';
+import * as jwt_decode from 'jwt-decode';
 
 // Create a new class to instantiate a user authentication service
 class AuthService {
   // Method to get the user profile by decoding the JWT token
   getProfile() {
-    return decode(this.getToken());
+    return jwt_decode(this.getToken());
   }
 
   // Method to check if the user is logged in based on the presence and validity of the JWT token
