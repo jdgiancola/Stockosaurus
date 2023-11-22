@@ -1,7 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
-import About from './pages/About';
+import AboutPage from './pages/About';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/Signup-Page';
 import DonatePage from './pages/Donate';
@@ -21,14 +21,14 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <Switch>
+        <Routes>
           <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/login" component={LoginPage} />
-          <Route path="/signup" component={SignupPage} />
-          <Route path="/donate" component={DonatePage} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignupPage />} />
+          <Route path="/donate" element={<DonatePage />} />
           {/* Add other routes here as needed */}
-        </Switch>
+        </Routes>
         <Footer />
       </div>
     </Router>
