@@ -1,11 +1,12 @@
 import React from 'react';
+import { Container, Card } from 'react-bootstrap';
 import '../Styles/About.css';
 
 const AboutPage = () => {
     return (
         <div>
-            <body className="d-flex flex-column justify-content-center align-items-center">
-                <section className="container px-4 glass-container rounded-5 mt-5 p-3 mb-5">
+            <Container className="d-flex flex-column justify-content-center align-items-center">
+                {/* <section className="container px-4 glass-container rounded-5 mt-5 p-3 mb-5">
                     <div className="row">
                         <div className="col">
                             <h5 id="title" className="text-white">STOCKOSAURUS</h5>
@@ -18,13 +19,13 @@ const AboutPage = () => {
                             <img src="" alt="" />
                         </div>
                     </div>
-                </section>
+                </section> */}
 
-                <section id="aboutus" className="card mt-4 glass-container">
-                    <div className="card-body">
-                        <h5 className="card-text">About Us</h5>
-                        <h1 className="card-title">#1 INVENTORY SOLUTION</h1>
-                        <p className="card-text">"At Stockosaurus, our mission is to revolutionize the world of inventory
+                <Card id="aboutus" className="card mt-4 glass-container">
+                    <Card.Body className="">
+                        <Card.Text className="">About Us</Card.Text>
+                        <Card.Title className="">#1 INVENTORY SOLUTION</Card.Title>
+                        <Card.Text className="">"At Stockosaurus, our mission is to revolutionize the world of inventory
                             management and bring it
                             out
                             of the Stone-Age. We strive to provide businesses of all sizes with a powerful, intuitive, and
@@ -35,13 +36,14 @@ const AboutPage = () => {
                             thrive in an ever-changing economic landscape. We believe in making inventory management not
                             just a
                             necessity but a strategic advantage for our clients, fostering growth and success in their
-                            endeavors."</p>
+                            endeavors."
+                        </Card.Text>
                         <p>-Your Stockosaurus Team</p>
                         <img src="" alt="" />
-                    </div>
-                </section>
-            </body>
-        </div>
+                    </Card.Body>
+                </Card>
+            </Container>
+        </div >
     );
 }
 
