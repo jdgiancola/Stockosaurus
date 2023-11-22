@@ -22,7 +22,13 @@ const Header = () => {
         <Nav>
           {Auth.loggedIn() ? (
             <>
-              <Button as= {Link} to="/me" variant="primary" className="m-2">
+            <Button as= {Link} to="/" variant="primary" className="m-2">
+                Home
+              </Button>
+              <Button as= {Link} to="/Donate" variant="primary" className="m-2">
+                Donate
+              </Button>
+              <Button as= {Link} to="/About" variant="primary" className="m-2">
                 About us
               </Button>
               <Button variant="light" className="m-2" onClick={logout}>

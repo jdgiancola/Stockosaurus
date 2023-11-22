@@ -1,0 +1,73 @@
+.Donate-containe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1a1a2e;
+    color: white;
+  }
+  
+  .Donate-header {
+    margin-bottom: 20px;
+  }
+  
+  .Donate-form {
+    background: #252a41;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .Donate-form h2 {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .Donate-form p {
+    color: #a5a5a5;
+    margin-bottom: 20px;
+  }
+  
+  .Donate-form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .Donate-form button {
+    background-color: #e94560;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .email-button {
+    background-color: #0f3460;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+.Donate-footer  {
+    margin-top: 10px;
+  }
+  
+  .Donate-footer a {
+    color: #4e0eff;
+    text-decoration: none;
+  }
+  
+  .Donate-footer span {
+    color: #a5a5a5;
+  }
+  

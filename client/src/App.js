@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/Signup-Page';
+import DonatePage from './pages/Donate';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import './Styles';
@@ -18,6 +19,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/login" component={LoginPage} />
           <Route path="/signup" component={SignupPage} />
+          <Route path="/donate" component={DonatePage} />
           {/* Add other routes here as needed */}
         </Switch>
         <Footer />
