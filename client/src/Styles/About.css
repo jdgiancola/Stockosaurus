@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Balinese&family=Rubik+Moonrocks&display=swap');
+
+
+body {
+    background: rgb(38, 2, 73) url('../assets/images/blurry_background_1.jpg') center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#aboutus {
+    width: 75%;
+}
+
+#navbar {
+    width: 75%;
+}
+
+#title {
+    font-family: 'Rubik Moonrocks', sans-serif;
+    font-size: 30px;
+}
+
+.btn {
+    background-color: rgb(52, 11, 93);
+    color: white;
+}
+
+#aboutus {
+    color: white;
+    font-family: 'Noto Serif Balinese', serif;
+}
+
+.glass-container {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
