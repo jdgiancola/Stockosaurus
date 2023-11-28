@@ -19,7 +19,7 @@ app.use(express.json());
 // Multer for image uploads
 const storage = multer.diskStorage({
   destination: './uploads/',
-  filename: function(req, file, cb) {
+  filename: function (req, file, cb) {
     cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname));
   }
 });
@@ -27,18 +27,18 @@ const storage = multer.diskStorage({
 const upload = multer({
   storage: storage,
   limits: { fileSize: 20000000 }, // Limit for file size (20MB)
-  fileFilter: function(req, file, cb) {
+  fileFilter: function (req, file, cb) {
     checkFileType(file, cb);
   }
-}).single('inventoryImage'); 
+}).single('inventoryImage');
 
 function checkFileType(file, cb) {
   const filetypes = /jpeg|jpg|png|gif/;
   const extname = filetypes.test(path.extname(file.originalname).toLowerCase());
   const mimetype = filetypes.test(file.mimetype);
 
-  if(mimetype && extname) {
-    return cb(null,true);
+  if (mimetype && extname) {
+    return cb(null, true);
   } else {
     cb('Error: Images Only!');
   }
@@ -47,10 +47,10 @@ function checkFileType(file, cb) {
 // Image upload endpoint
 app.post('/upload', (req, res) => {
   upload(req, res, (err) => {
-    if(err) {
+    if (err) {
       res.send({ msg: err });
     } else {
-      if(req.file == undefined) {
+      if (req.file == undefined) {
         res.send({ msg: 'Error: No File Selected!' });
       } else {
         res.send({ msg: 'File Uploaded!', file: `uploads/${req.file.filename}` });
@@ -72,5 +72,5 @@ app.use('/graphql', graphqlHTTP({
 }));
 
 // Server listening
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

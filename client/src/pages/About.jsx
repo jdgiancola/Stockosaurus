@@ -6,20 +6,6 @@ const AboutPage = () => {
     return (
         <div>
             <Container className="d-flex flex-column justify-content-center align-items-center">
-                {/* <section className="container px-4 glass-container rounded-5 mt-5 p-3 mb-5">
-                    <div className="row">
-                        <div className="col">
-                            <h5 id="title" className="text-white">STOCKOSAURUS</h5>
-                        </div>
-                        <div className="col">
-                            <a href="#" className="btn rounded-5">Login</a>
-                            <a href="#" className="btn rounded-5 ms-3">Sign Up</a>
-                        </div>
-                        <div className="col">
-                            <img src="" alt="" />
-                        </div>
-                    </div>
-                </section> */}
 
                 <Card id="aboutus" className="card mt-4 glass-container">
                     <Card.Body className="">

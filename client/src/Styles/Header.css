@@ -1,0 +1,48 @@
+.titlename {
+    font-family: 'Rubik Moonrocks', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #6a00ffca;
+    color: #6a00ffca;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+.btn:hover {
+    background-color: #6a00ffca;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.fullheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.tagline {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbtns {
+    display: flex;
+    align-items: center;
+}
