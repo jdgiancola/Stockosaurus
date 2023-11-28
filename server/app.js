@@ -1,4 +1,3 @@
-require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -7,7 +6,7 @@ const path = require('path');
 const { graphqlHTTP } = require('express-graphql');
 const schema = require('./schema/schema'); // Assuming your GraphQL schema is here
 
-
+require('dotenv').config();
 
 // Express app initialization
 const app = express();
