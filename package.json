@@ -8,8 +8,9 @@
         "client": "cd client && npm run dev",
         "server": "nodemon server/app.js",
         "dev": "concurrently \"npm run server\" \"npm run client\"",
-        "install-client": "cd client && npm install"
-    },
+        "install-client": "cd client && npm install",
+        "heroku-postbuild": "npm install --prefix client && npm install --prefix server"
+    },    
     "author": "Abdul-Samed Alhassan, Alexander Mattock, Phillip Guetterman, Joseph Giancola",
     "license": "ISC",
     "devDependencies": {
