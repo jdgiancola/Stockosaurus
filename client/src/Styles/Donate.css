@@ -1,73 +1,76 @@
-.Donate-containe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #1a1a2e;
-    color: white;
-  }
-  
-  .Donate-header {
-    margin-bottom: 20px;
-  }
-  
-  .Donate-form {
-    background: #252a41;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .Donate-form h2 {
-    color: #fff;
-    margin-bottom: 10px;
-  }
-  
-  .Donate-form p {
-    color: #a5a5a5;
-    margin-bottom: 20px;
-  }
-  
-  .Donate-form input {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: none;
-  }
-  
-  .Donate-form button {
-    background-color: #e94560;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .email-button {
-    background-color: #0f3460;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-.Donate-footer  {
-    margin-top: 10px;
-  }
-  
-  .Donate-footer a {
-    color: #4e0eff;
-    text-decoration: none;
-  }
-  
-  .Donate-footer span {
-    color: #a5a5a5;
-  }
-  
+.Donate-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* dark navy blue */
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Donate-header {
+  margin-bottom: 2rem;
+}
+
+.Donate-form {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Donate-form h2 {
+  margin-bottom: 1rem;
+  width: 400px;
+  max-width: 100vw;
+}
+
+.Donate-form p {
+  margin-bottom: 2rem;
+
+}
+
+.Donate-form input {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.Donate-form button {
+  width: 100%;
+  background-color: #341f97;
+  /* purple */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.email-button {
+  background-color: #0f3460;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Donate-footer {
+  margin-top: 10px;
+}
+
+.Donate-footer a {
+  color: #4e0eff;
+  text-decoration: none;
+}
+
+.Donate-footer span {
+  color: #a5a5a5;
+}

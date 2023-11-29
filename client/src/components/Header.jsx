@@ -28,7 +28,7 @@ const Header = () => {
           {Auth.loggedIn() ? (
             <>
               <Button as={Link} to="/" variant="primary" className="m-2 btn">
-                Homehttps://react-bootstrap.github.io/docs/layout/grid
+                Home
               </Button>
               <Button as={Link} to="/Donate" variant="primary" className="m-2 btn">
                 Donate
