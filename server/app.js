@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const multer = require('multer');
 const path = require('path');
-const { graphqlHTTP } = require('express-graphql');
-const schema = require('./schema/schema'); // Assuming your GraphQL schema is here
+const graphqlHTTP = require('express-graphql');
+const schema = require('./schema/schema');
 
 require('dotenv').config();
 
@@ -60,16 +60,16 @@ app.post('/upload', (req, res) => {
 });
 
 // MongoDB connection
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
 
 // GraphQL server setup
 app.use('/graphql', graphqlHTTP({
-  schema,
+  schema: schema,
   graphiql: true
 }));
 
 // Server listening
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
