@@ -17,7 +17,7 @@ const Header = () => {
           </h1>
         </Navbar.Brand>
         <Navbar.Text className="m-0" style={{ fontSize: '1.75rem', fontWeight: '700' }}>
-          Your cool new iventory system!
+          Your cool new inventory system!
         </Navbar.Text>
         <Nav>
           {Auth.loggedIn() ? (
