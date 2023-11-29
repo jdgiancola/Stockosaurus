@@ -19,7 +19,8 @@ const Header = () => {
             STOCKOSAURUS
           </h1>
         </Navbar.Brand>
-        <Navbar.Text className="m-0 tagline" style={{ fontSize: '1.75rem', fontWeight: '700' }}>
+        <Navbar.Text className="m-0" style={{ fontSize: '1.75rem', fontWeight: '700' }}>
+       
           Your cool new inventory system!
         </Navbar.Text>
       </Container>
