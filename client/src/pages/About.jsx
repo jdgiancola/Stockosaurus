@@ -1,10 +1,11 @@
 import React from 'react';
-import { Container, Card } from 'react-bootstrap';
+import { Container, Card, Spinner } from 'react-bootstrap';
 import '../Styles/About.css';
 
 const AboutPage = () => {
     return (
         <div>
+
             <Container className="d-flex flex-column justify-content-center align-items-center">
 
                 <Card id="aboutus" className="card mt-4 glass-container">

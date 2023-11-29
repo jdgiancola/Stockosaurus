@@ -30,11 +30,10 @@
 }
 
 .fullheader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    width: 100vw;
     text-align: center;
+    display: block !important;
+
 }
 
 .tagline {

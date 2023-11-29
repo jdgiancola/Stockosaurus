@@ -12,7 +12,7 @@ const Header = () => {
   };
 
   return (
-    <Navbar bg="info" variant="dark" className="fullheader mb-4">
+    <Navbar bg="" variant="dark" className="fullheader mb-4">
       <Container className="justify-content-between">
         <Navbar.Brand as={Link} to="/" className="text-dark">
           <h1 className="titlename m-0">
@@ -20,13 +20,15 @@ const Header = () => {
           </h1>
         </Navbar.Brand>
         <Navbar.Text className="m-0 tagline" style={{ fontSize: '1.75rem', fontWeight: '700' }}>
-          Your cool new iventory system!
+          Your cool new inventory system!
         </Navbar.Text>
+      </Container>
+      <Container className='justify-content-center'>
         <Nav className='navbtns'>
           {Auth.loggedIn() ? (
             <>
               <Button as={Link} to="/" variant="primary" className="m-2 btn">
-                Home
+                Homehttps://react-bootstrap.github.io/docs/layout/grid
               </Button>
               <Button as={Link} to="/Donate" variant="primary" className="m-2 btn">
                 Donate

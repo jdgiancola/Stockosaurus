@@ -5,8 +5,7 @@ const LoginPage = () => {
   return (
     <div className="login-container">
       <div className="login-form">
-        <h2>Create an account</h2>
-        <p>Let's get started!</p>
+        <h2>Log In!</h2>
         <form>
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
