@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { CardElement, useStripe, useElements } from 'react-stripe-elements';
+import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import '../Styles/Donate.css';
 
 const DonateForm = () => {
