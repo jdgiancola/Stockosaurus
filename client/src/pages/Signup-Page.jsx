@@ -5,9 +5,6 @@ import '../Styles/Signup-Page.css';
 const SignupPage = () => {
   return (
     <div className="signup-container">
-      <div className="signup-header">
-        <h1>Stockosaurus</h1>
-      </div>
       <div className="signup-form-container">
         <h2>Create an account</h2>
         <p>Let's get started!</p>

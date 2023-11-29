@@ -1,15 +1,11 @@
 import React from 'react';
-import '../Styles/LoginPage.css'; 
+import '../Styles/LoginPage.css';
 
 const LoginPage = () => {
   return (
     <div className="login-container">
-      <div className="login-header">
-        <h1>STOCKOSAURUS</h1>
-      </div>
       <div className="login-form">
-        <h2>Create an account</h2>
-        <p>Let's get started!</p>
+        <h2>Log In!</h2>
         <form>
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
