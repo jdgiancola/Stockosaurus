@@ -14,23 +14,18 @@ body {
     width: 75%;
 }
 
-#navbar {
-    width: 75%;
-}
 
 #title {
     font-family: 'Rubik Moonrocks', sans-serif;
     font-size: 30px;
 }
 
-.btn {
-    background-color: rgb(52, 11, 93);
-    color: white;
-}
-
 #aboutus {
     color: white;
-    font-family: 'Noto Serif Balinese', serif;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+    width: 75%;
+    margin: auto;
 }
 
 .glass-container {

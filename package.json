@@ -8,8 +8,9 @@
         "client": "cd client && npm run dev",
         "server": "nodemon server/app.js",
         "dev": "concurrently \"npm run server\" \"npm run client\"",
-        "install-client": "cd client && npm install"
-    },
+        "install-client": "cd client && npm install",
+        "heroku-postbuild": "npm install --prefix client && npm install --prefix server"
+    },    
     "author": "Abdul-Samed Alhassan, Alexander Mattock, Phillip Guetterman, Joseph Giancola",
     "license": "ISC",
     "devDependencies": {
@@ -17,9 +18,15 @@
         "nodemon": "^3.0.1"
     },
     "dependencies": {
+        "bootstrap": "^5.3.2",
+        "express-graphql": "^0.12.0",
+        "react-bootstrap": "^2.9.1",
+       
+        "react-dom": "^18.2.0",
         "dotenv": "^16.3.1",
         "express": "^4.18.2",
         "express-graphql": "^0.12.0",
         "react-stripe-elements": "^6.1.2"
+
     }
 }
