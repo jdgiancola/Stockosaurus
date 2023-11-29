@@ -1,10 +1,13 @@
-// Client/src/components/Footer.js - Footer component
+// Footer.jsx
 import React from 'react';
+import './Styles/Footer.css'; // Import the CSS file
 
-function Footer () {
+const Footer = () => {
   return (
-    <footer className="bg-light text-center py-3">
-      <p className="mb-0">&copy; {new Date().getFullYear()} Inventory App</p>
+    <footer className="footer-container">
+      <div className="container text-center">
+        <h4 className="footer-text">&copy; {new Date().getFullYear()} Inventory App</h4>
+      </div>
     </footer>
   );
 };
