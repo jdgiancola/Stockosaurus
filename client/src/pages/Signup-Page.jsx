@@ -4,7 +4,8 @@ import { useMutation } from '@apollo/client';
 
 import Swal from 'sweetalert2';
 import { ADD_USER } from '../utils/mutations';
-import Auth from '../utils/auth';
+
+import Auth from '../utils/auth'
 
 
 const SignupPage = () => {
