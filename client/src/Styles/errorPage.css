@@ -1,0 +1,9 @@
+#error-page {
+    color: #ffff;
+    text-align: center;
+    margin-top: 10rem;
+}
+h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
