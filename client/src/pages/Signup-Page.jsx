@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
- import { ADD_USER } from '../utils/mutations'; // Replace 'path-to-your-mutation' with the actual path
+import Swal from 'sweetalert2';
+import { ADD_USER } from '../utils/mutations';
+import Auth from '../utils/AuthService';
 
 const SignupPage = () => {
   const [formState, setFormState] = useState({
@@ -28,9 +30,28 @@ const SignupPage = () => {
         variables: { ...formState },
       });
 
+      // Display success message with SweetAlert
+      Swal.fire({
+        icon: 'success',
+        title: 'Signup Successful!',
+        text: 'You have successfully signed up.',
+        confirmButtonText: "OK",
+        confirmationButtonColor:"#4169E1", // Color-Royal blue
+      });
+
       // Assuming Auth.login() is a function to handle user login, replace it with your actual logic
       Auth.login(data.addUser.token);
     } catch (e) {
+      // Display error message with SweetAlert
+      Swal.fire({
+        icon: 'error',
+        title: 'Signup Failed',
+        text: 'An error occurred during signup. Please try again.',
+        confirmButtonText: "OK",
+        confirmationButtonColor:"#DC143C", // Crismon-colour
+
+      });
+
       console.error(e);
     }
   };
@@ -93,5 +114,6 @@ const SignupPage = () => {
 };
 
 export default SignupPage;
+
 
 
