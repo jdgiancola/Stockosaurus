@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
- import { ADD_USER } from '../utils/mutations'; // Replace 'path-to-your-mutation' with the actual path
+ import { ADD_USER } from '../utils/mutations'; 
 
 const SignupPage = () => {
   const [formState, setFormState] = useState({

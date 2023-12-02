@@ -1,3 +1,4 @@
 const user = require('./user');
+const inventoryItem = require('./inventoryItem');
 
-module.exports = { user };
+module.exports = { user, inventoryItem };
