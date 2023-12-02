@@ -31,9 +31,7 @@ const Header = () => {
               <Button as={Link} to="/" variant="primary" className="m-2 btn">
                 Home
               </Button>
-              <Button as={Link} to="/Donate" variant="primary" className="m-2 btn">
-                Donate
-              </Button>
+             
               <Button as={Link} to="/About" variant="primary" className="m-2 btn">
                 About us
               </Button>
@@ -48,6 +46,9 @@ const Header = () => {
               </Button>
               <Button as={Link} to="/signup" variant="light" className="m-2 btn">
                 Signup
+              </Button>
+              <Button as={Link} to="/Donate" variant="primary" className="m-2 btn">
+                Donate
               </Button>
 
             </>
