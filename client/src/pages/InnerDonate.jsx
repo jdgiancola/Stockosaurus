@@ -13,8 +13,7 @@ const InnerDonateForm = () => {
     e.preventDefault();
 
     if (!stripe || !elements) {
-      // Stripe.js has not loaded yet. Make sure to disable
-      // form submission until Stripe.js has loaded.
+      
       return;
     }
 
@@ -27,7 +26,7 @@ const InnerDonateForm = () => {
     if (error) {
       console.error(error);
     } else {
-      // Handle the token (send to server, update UI, etc.)
+    
       console.log(token);
     }
   };
