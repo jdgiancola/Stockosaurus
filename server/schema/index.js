@@ -1,4 +1,4 @@
-// const schema = require('./schema');
+const schema = require('./schema');
 const resolvers = require('./resolvers');
 const typeDefs = require('./typeDefs');
 

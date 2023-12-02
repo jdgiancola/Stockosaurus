@@ -1,63 +1,16 @@
+import React from 'react';
+import { Elements } from '@stripe/react-stripe-js';
+import { loadStripe } from '@stripe/stripe-js';
+import InnerDonateForm from './InnerDonate';
 
-import React, { useState } from 'react';
-import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
-import '../Styles/Donate.css';
+const stripePromise = loadStripe('pk_test_51OHcJjKI0t3hZzYa0QC73mElXGTwnl0TStX9IO8SttcEAilhPiA6B3ePYUcuKvNgPaBV7GjzIMmQg8jNstXPtY8100upMWmutQ'); // Replace with your actual Stripe public key
 
 const DonateForm = () => {
-  const stripe = useStripe();
-  const elements = useElements();
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [amount, setAmount] = useState('');
-
-  const handleDonate = async (e) => {
-    e.preventDefault();
-
-    if (!stripe || !elements) {
-      // Stripe.js has not loaded yet. Make sure to disable
-      // form submission until Stripe.js has loaded.
-      return;
-    }
-
-    // Create a token or handle card details using elements
-    const { token, error } = await stripe.createToken(elements.getElement(CardElement), {
-      name: name,
-      email: email,
-    });
-
-    if (error) {
-      console.error(error);
-    } else {
-      // Handle the token (send to server, update UI, etc.)
-      console.log(token);
-    }
-  };
-
   return (
-    <form onSubmit={handleDonate}>
-      <label>
-        Name
-        <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
-      </label>
-      <label>
-        Email
-        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-      </label>
-      <label>
-        Amount
-        <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} />
-      </label>
-      <label>
-        Card Details
-        <CardElement />
-      </label>
-      <button type="submit" disabled={!stripe}>
-        Donate!
-      </button>
-    </form>
+    <Elements stripe={stripePromise}>
+      <InnerDonateForm />
+    </Elements>
   );
 };
 
 export default DonateForm;
-
-
