@@ -37,15 +37,15 @@ const InnerDonateForm = () => {
         client/src/assets/images/stockosaurusLogo.png"></image>
       <label>
         Name
-        <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+        <input class="input" type="text" value={name} onChange={(e) => setName(e.target.value)} />
       </label>
       <label>
         Email
-        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+        <input class="input" type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
       </label>
       <label>
         Amount
-        <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} />
+        <input class="input" type="number" value={amount} onChange={(e) => setAmount(e.target.value)} />
       </label>
       <label>
         Card Details

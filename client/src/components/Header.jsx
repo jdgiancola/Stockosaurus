@@ -28,19 +28,18 @@ const Header = () => {
         <Nav className='navbtns'>
           {Auth.loggedIn() ? (
             <>
-              <Button as={Link} to="/" variant="primary" className="m-2 btn">
-                Home
-              </Button>
-             
-              <Button as={Link} to="/About" variant="primary" className="m-2 btn">
-                About us
-              </Button>
               <Button variant="light" className="m-2 btn" onClick={logout}>
                 Logout
               </Button>
             </>
           ) : (
             <>
+            <Button as={Link} to="/" variant="primary" className="m-2 btn">
+                Home
+              </Button>
+              <Button as={Link} to="/About" variant="primary" className="m-2 btn">
+                About us
+              </Button>
               <Button as={Link} to="/login" variant="primary" className="m-2 btn">
                 Login
               </Button>
