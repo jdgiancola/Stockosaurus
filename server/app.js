@@ -133,7 +133,9 @@ const express = require('express');
 const { ApolloServer } = require('@apollo/server');
 const { expressMiddleware } = require('@apollo/server/express4');
 const path = require('path');
-const { authMiddleware, AuthenticationError } = require('./utils/auth');
+const { authMiddleware, 
+  // AuthenticationError 
+} = require('./utils/auth');
 
 const { typeDefs, resolvers } = require('./schema');
 const db = require('./config/connection');
@@ -143,14 +145,15 @@ const app = express();
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  formatError: (err) => {
-    if (err.originalError instanceof AuthenticationError) {
-      // Handle AuthenticationError specifically
-      return new AuthenticationError(err.message);
-    }
-    return err;
+  // formatError: (err) => {
+  //   if (err.originalError instanceof AuthenticationError) {
+  //     // Handle AuthenticationError specifically
+  //     return new AuthenticationError(err.message);
+  //   }
+  //   return err;
   },
-});
+// }
+);
 
 const startApolloServer = async () => {
   await server.start();

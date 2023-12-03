@@ -7,6 +7,7 @@ import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/Signup-Page';
 import DonatePage from './pages/Donate';
 import ErrorPage from './pages/ErrorPage';
+import InvnetoryPage from './pages/Inventory';
 import './styles/About.css';
 import './styles/Donate.css';
 import './styles/Home.css';
@@ -35,6 +36,10 @@ children: [
     path: '/donate', 
     element: <DonatePage /> 
   }, {
+    path: '/Inventory',
+    element: <InvnetoryPage />
+  },
+  {
     path: '*',
     element: <ErrorPage />
   }

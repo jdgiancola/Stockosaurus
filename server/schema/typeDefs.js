@@ -28,9 +28,9 @@ const typeDefs = `
   type Query {
     users: [User]
     user(username: String!): User
-    me: User  
     inventory: [InventoryItem]
     inventoryItem(_id: ID!): InventoryItem
+    me: User  
   }
 
   type Mutation {

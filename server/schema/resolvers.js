@@ -1,4 +1,4 @@
-const { User, Thought, InventoryItem } = require("../Models");
+const { User, InventoryItem } = require("../Models");
 const { signToken, AuthenticationError } = require("../utils/auth");
 
 const resolvers = {
