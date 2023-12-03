@@ -2,7 +2,9 @@
 ![App Logo-Top](client/src/assets/images/stockosaurusLogo.png)
 ![Buttom](client/src/assets/images/stockosaurus_1.png)
 
-## Table of Conten
+Deployed Site: https://floating-badlands-00127-5e48a29dd913.herokuapp.com/
+
+## Table of Content
 
 - [Introduction](#introduction)
 - [Features](#features)
