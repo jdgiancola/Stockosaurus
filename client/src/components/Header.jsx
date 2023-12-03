@@ -31,24 +31,28 @@ const Header = () => {
               <Button variant="light" className="m-2 btn" onClick={logout}>
                 Logout
               </Button>
-            </>
-          ) : (
-            <>
-            <Button as={Link} to="/" variant="primary" className="m-2 btn">
-                Home
+              <Button as={Link} to="/Donate" variant="primary" className="m-2 btn">
+                Donate
               </Button>
               <Button as={Link} to="/About" variant="primary" className="m-2 btn">
                 About us
               </Button>
+              <Button as={Link} to="/" variant="primary" className="m-2 btn">
+                Home
+              </Button>
+              <Button as={Link} to="/Inventory" variant="primary" className="m-2 btn">
+                My Inventory
+              </Button>
+            </>
+          ) : (
+            <>
               <Button as={Link} to="/login" variant="primary" className="m-2 btn">
                 Login
               </Button>
               <Button as={Link} to="/signup" variant="light" className="m-2 btn">
                 Signup
               </Button>
-              <Button as={Link} to="/Donate" variant="primary" className="m-2 btn">
-                Donate
-              </Button>
+              
 
             </>
           )}
