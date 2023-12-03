@@ -70,7 +70,7 @@ At Stockosaurus, we're on a mission to revolutionize inventory management. This 
    npm start
 
 
-3. Open your browser and navigate to http://localhost:5001.
+3. Open your browser and navigate to http://localhost:3000.
 
 
 ### Project Structure

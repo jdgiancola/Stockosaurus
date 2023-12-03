@@ -6,13 +6,14 @@ form {
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 10px;
-}
+} 
 
 label {
   margin-bottom: 2rem;
   font-size: 1.5rem;
 }
-input {
+
+.input {
   margin: 2rem;
   font-size: 1.5rem;
   padding: 0.5rem;
@@ -20,7 +21,7 @@ input {
   border: none;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
-}
+} 
 
 #creditcard {
   background: #ffff;
@@ -74,5 +75,5 @@ button {
   border: none;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-}
+} */
 
