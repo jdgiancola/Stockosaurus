@@ -52,7 +52,7 @@ const SignupPage = () => {
 
       });
 
-      console.error(e);
+      
     }
   };
 
