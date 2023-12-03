@@ -38,7 +38,6 @@ children: [
     path: '*',
     element: <ErrorPage />
   }
-
 ]
   }
 ]);
