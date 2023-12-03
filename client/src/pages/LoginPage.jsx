@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../utils/mutations';
 import Swal from 'sweetalert2';
-import Auth from '../utils/AuthService'; // Import Auth service for handling user authentication
+import Auth from '../utils/auth'; // Import Auth service for handling user authentication
 import '../Styles/LoginPage.css';
 
 // Define the functionality component for the login page
