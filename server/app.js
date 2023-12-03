@@ -133,7 +133,7 @@ const express = require('express');
 const { ApolloServer } = require('@apollo/server');
 const { expressMiddleware } = require('@apollo/server/express4');
 const path = require('path');
-const { authMiddleware } = require('./utils/auth');
+const { authMiddleware, AuthenticationError } = require('./utils/auth');
 
 const { typeDefs, resolvers } = require('./schema');
 const db = require('./config/connection');
@@ -143,9 +143,15 @@ const app = express();
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  formatError: (err) => {
+    if (err.originalError instanceof AuthenticationError) {
+      // Handle AuthenticationError specifically
+      return new AuthenticationError(err.message);
+    }
+    return err;
+  },
 });
 
-// Create a new instance of an Apollo server with the GraphQL schema
 const startApolloServer = async () => {
   await server.start();
 
@@ -172,5 +178,4 @@ const startApolloServer = async () => {
   });
 };
 
-// Call the async function to start the server
   startApolloServer();

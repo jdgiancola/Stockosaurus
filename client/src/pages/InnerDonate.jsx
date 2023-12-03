@@ -17,7 +17,6 @@ const InnerDonateForm = () => {
       return;
     }
 
-    // Create a token or handle card details using elements
     const { token, error } = await stripe.createToken(elements.getElement(CardElement), {
       name: name,
       email: email,
@@ -37,15 +36,15 @@ const InnerDonateForm = () => {
         client/src/assets/images/stockosaurusLogo.png"></image>
       <label>
         Name
-        <input class="input" type="text" value={name} onChange={(e) => setName(e.target.value)} />
+        <input class="input" type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
       </label>
       <label>
         Email
-        <input class="input" type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+        <input class="input" type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
       </label>
       <label>
         Amount
-        <input class="input" type="number" value={amount} onChange={(e) => setAmount(e.target.value)} />
+        <input class="input" type="number" placeholder="Password" value={amount} onChange={(e) => setAmount(e.target.value)} />
       </label>
       <label>
         Card Details

@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import Swal from 'sweetalert2';
 import { ADD_USER } from '../utils/mutations';
-import Auth from '../utils/AuthService';
+import Auth from '../utils/auth'
+
 
 const SignupPage = () => {
   const [formState, setFormState] = useState({
@@ -39,7 +40,6 @@ const SignupPage = () => {
         confirmationButtonColor:"#4169E1", // Color-Royal blue
       });
 
-      // Assuming Auth.login() is a function to handle user login, replace it with your actual logic
       Auth.login(data.addUser.token);
     } catch (e) {
       // Display error message with SweetAlert
