@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Table } from 'react-bootstrap'; // Make sure to import the Table component from react-bootstrap
+import '../Styles/Inventory.css'; // Import the CSS file
 import '../../../server/Uploads/dino-figures.png';
 
-const MyInventory = () => {
+const Inventory = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [inventoryItems, setInventoryItems] = useState([
     {
@@ -73,4 +74,4 @@ const MyInventory = () => {
   );
 };
 
-export default MyInventory;
+export default Inventory;
