@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Table } from 'react-bootstrap'; // Make sure to import the Table component from react-bootstrap
-import '../Styles/Inventory.css'; // Import the CSS file
+import { Table } from 'react-bootstrap'; 
+import '../Styles/Inventory.css';
 import '../../../server/Uploads/dino-figures.png';
 
 const Inventory = () => {
@@ -21,7 +21,6 @@ const Inventory = () => {
     },
   ]);
 
-  // Handlers for form input and submission
   const handleSearchChange = (e) => {
     setSearchTerm(e.target.value);
   };
