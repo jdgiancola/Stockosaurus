@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+
 import { Table } from 'react-bootstrap'; // Make sure to import the Table component from react-bootstrap
+
 import '../Styles/Inventory.css';
 import '../../../server/Uploads/dino-figures.png';
 
-const MyInventory = () => {
+const Inventory = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [inventoryItems, setInventoryItems] = useState([
     {
@@ -21,7 +23,6 @@ const MyInventory = () => {
     },
   ]);
 
-  // Handlers for form input and submission
   const handleSearchChange = (e) => {
     setSearchTerm(e.target.value);
   };
@@ -74,4 +75,4 @@ const MyInventory = () => {
   );
 };
 
-export default MyInventory;
+export default Inventory;
