@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { Table } from 'react-bootstrap'; 
+
+import { Table } from 'react-bootstrap'; // Make sure to import the Table component from react-bootstrap
+
 import '../Styles/Inventory.css';
 import '../../../server/Uploads/dino-figures.png';
 
